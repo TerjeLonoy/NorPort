@@ -2,7 +2,7 @@ var fs = require('fs')
 var archiver = require('archiver');
 var archive = archiver('zip');
 
-var fileName = 'archive.zip'
+var fileName = 'Archive.zip'
 var fileOutput = fs.createWriteStream(fileName);
 
 fileOutput.on('close', function () {

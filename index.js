@@ -12,7 +12,7 @@ var handlers = {
       var address = this.event.request.intent.slots.Address.value
       state = states.SETTING_ADDRESS_STATE
       askParams.address = address
-      this.emit(':ask', address + ' will be set as your home address', 'say yes to verify or no to cancel')
+      this.emit(':ask', address + ' will be set as your home address, is that correct?', 'say yes to verify or no to cancel')
     },
 
     'GetNextDeparture': function () {

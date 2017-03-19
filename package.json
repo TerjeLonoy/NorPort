@@ -4,11 +4,15 @@
   "description": "Alexa Skill",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "archive": "node archiver.js"
   },
   "author": "Terje Lønøy",
   "license": "ISC",
   "dependencies": {
     "alexa-sdk": "^1.0.7"
+  },
+  "devDependencies": {
+    "archiver": "^1.3.0"
   }
 }
